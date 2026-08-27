@@ -1,0 +1,4 @@
+educational purpose project 
+deve1-frontend 
+dev2-backend
+dev3-database
