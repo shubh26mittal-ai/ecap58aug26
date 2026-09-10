@@ -1,9 +1,14 @@
-package modifierpack1;
+package encapsule;
 
-public class Test extends DefaultModifierEx{
+public class Test {
 
-    public static void main(String[] args) {
-        Test t1 = new Test();
-        t1.m1(); // same package hai isliye accessible hai
-    }
+	public static void main(String[] args) {
+		Demo d1 = new Demo();
+		//System.out.println(d1.a);
+		//System.out.println(d1.b);
+		d1.m1();//10,20
+				
+
+	}
+
 }
