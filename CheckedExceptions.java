@@ -1,33 +1,34 @@
 package exceptions;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
-//public class Demo {
+//public class CheckedExceptions {
 
-//	 public static void main(String[] args) {
+  //  public static void main(String[] args) {
 
-//	        System.out.println("Hello");//Hello
+    //    try {
+      //      FileInputStream fis = new FileInputStream("Shubh.txt");
+        //} catch (FileNotFoundException e) {
+          //  System.out.println("File you are searching is not present in the system");
+        //}
+    //}
+//}
+//package exceptions;
+//class Demo extends Object
+//{
+  //  @Override
+    //public void finalize()
+    ///{
+       // System.out.println("finalize() called");
+    //}
 
-//	        try {
-//	            int a = 10;
-//	            int b = 0;
-//	            int res = a / b;
-//	            System.out.println(res);
-//	        } catch (ArithmeticException e) {
-//	            System.out.println("Any number cannot be divided by zero");//Any number cannot be divided by zero
-//	        }
+    //public static void main(String[] args) {
+      //  Demo d = new Demo();
 
-//    System.out.println("Bye")//Bye
+        //d = null;  
 
-//	    }
-//	}
-
-//public class Demo {
-//	public static void main(String[] args) {
-
-//        int a = 15;
-//        int b = 25;
-
-//        System.out.println(a + b);//30//40
-//    }
+        //System.gc();                   
+    //}
 //}
 class Demo
 {
@@ -47,6 +48,7 @@ class Demo
     //         System.out.println("Thread got sleep");
     //     }
     // }
+
     public void m2() throws InterruptedException
     {
         this.m1();
@@ -63,3 +65,4 @@ class Demo
         d.m3();
     }
 }
+
