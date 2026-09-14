@@ -2,34 +2,34 @@ package exceptions;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-//public class CheckedExceptions {
+public class CheckedExceptions {
 
-  //  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    //    try {
-      //      FileInputStream fis = new FileInputStream("Shubh.txt");
-        //} catch (FileNotFoundException e) {
-          //  System.out.println("File you are searching is not present in the system");
-        //}
-    //}
-//}
-//package exceptions;
-//class Demo extends Object
-//{
-  //  @Override
-    //public void finalize()
-    ///{
-       // System.out.println("finalize() called");
-    //}
+        try {
+            FileInputStream fis = new FileInputStream("Shubh.txt");
+        } catch (FileNotFoundException e) {
+            System.out.println("File you are searching is not present in the system");
+        }
+    }
+}
+package exceptions;
+class Demo extends Object
+{
+    @Override
+    public void finalize()
+    {
+       System.out.println("finalize() called");
+    }
 
-    //public static void main(String[] args) {
-      //  Demo d = new Demo();
+    public static void main(String[] args) {
+        Demo d = new Demo();
 
-        //d = null;  
+        d = null;  
 
-        //System.gc();                   
-    //}
-//}
+        System.gc();                   
+    }
+}
 class Demo
 {
     public void m1() throws InterruptedException   // called method
@@ -37,17 +37,17 @@ class Demo
         Thread.sleep(5000);
     }
 
-    // public void m2()   // caller method
-    // {
-    //     try {
-    //         this.m1();
-    //         System.out.println("Thread is working fine now...");
-    //     }
-    //     catch(InterruptedException e)
-    //     {
-    //         System.out.println("Thread got sleep");
-    //     }
-    // }
+     public void m2()   // caller method
+     {
+         try {
+             this.m1();
+             System.out.println("Thread is working fine now...");
+         }
+         catch(InterruptedException e)
+         {
+             System.out.println("Thread got sleep");
+         }
+     }
 
     public void m2() throws InterruptedException
     {
