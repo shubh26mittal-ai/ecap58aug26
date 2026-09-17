@@ -1,45 +1,44 @@
-package collections.listcollections;
-import java.util.ArrayList;
-import java.util.List;
+package collections.setcollections;
+import java.util.Set;
+import java.util.LinkedHashSet;
+import java.util.HashSet;
 public class Demo {
 
+	//public static void main(String[] args) {
+		//Set<Object> s = new LinkedHashSet<>();
+		//s.add(10);
+		//s.add(5.5);
+		//s.add(true);
+		//s.add('1');
+		//s.add("Hello");
+		//System.out.println(s);//[10, 5.5, true, 1, Hello]
+
+		
+
+	//}
+
+//}
+	
+	//public static void main(String[] args) {
+		// Set s = new HashSet();
+		//s.add(10);
+		//s.add(5.5);
+		//s.add(true);
+		//s.add('1');
+		//s.add("Hello");
+		//System.out.println(s);//[1, Hello, 5.5, 10, true]
+	//}
+//}
+	
 	public static void main(String[] args) {
-		//List l1 = new List();
-		//List l1 = new ArrayList();
-		//System.out.println(l1);//[]
-		//l1.add(10);
-		//l1.add(20);
-		//l1.add(30);
-	//	l1.add(40);
-		//l1.add(50);
-		//System.out.println(l1);//[10, 20, 30, 40, 50]
-		
-		//List l1 = new ArrayList();
-		//System.out.println(l1);//[]
-		//l1.add(10);
-		//l1.add("Hii");
-		//l1.add('a');
-		//l1.add(4.54);
-		//l1.add(true);
-		//System.out.println(l1);//[10, Hii, a, 4.54, true]
-		
-		
-		//List l1 = new ArrayList();
-		//l1.add(10);
-		//l1.add("Hii");
-		//l1.add(true);
-		//l1.add(4.54);
-		//l1.add(true);
-		//System.out.println(l1);//[10, Hii, 10, 4.54, true]
-		
-		List l1 = new ArrayList();
-		l1.add(10);
-		l1.add("Hii");
-		l1.add(true);
-		l1.add(4.54);
-		l1.add(null);
-		System.out.println(l1);//[10, Hii, true, 4.54, null]
+		 Set s = new HashSet();
+		s.add(10);
+		s.add(5.5);
+		s.add(true);
+		s.add('1');
+		s.add("Hello");
+		s.add(null);
+		System.out.println(s);//[null, 1, Hello, 5.5, 10, true]
 
 	}
-
 }

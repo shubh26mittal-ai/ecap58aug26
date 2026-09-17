@@ -1,42 +1,18 @@
-//package encapsule;
+package collections.setcollections;
 
-//public class Students {
-	//private int rollNo=101;
-	//private String name="priya";
-	//private double marks= 80;
-	
-	//getter method 
-	public int get RollNo() {
-		return rollNo;
+public class Students {
+	int rollno;
+	String name;
+	int marks;
+	public Students(int rollno, String name, int marks) {
+		super();
+		this.rollno = rollno;
+		this.name = name;
+		this.marks = marks;
 	}
-	public String getname()
-	{
-		return name;
+	@Override
+	public String toString() {
+		return "Students [rollno=" + rollno + ", name=" + name + ", marks=" + marks + "]";
 	}
-	public double getMarks()
-	{
-		return marks;
-	}
-//setter method
-	public void set RollNo(int rollno)
-	{
-		this.rollno=rollNo;
-}
-	public void setName(String name)
-	{
-		this.name=name;
-	}
-	public void setMarks(double marks)
-	{
-		this.marks=marks;
-	}
-	public String tostring()
-	{
-		return "Hello";
-	}
-	//tostring method
-	public String toString
-	{
-		return rollNo+" "+name" "+marks;
-	}
+
 }
