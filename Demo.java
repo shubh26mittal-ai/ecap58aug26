@@ -1,65 +1,45 @@
-package exceptions;
+package collections.listcollections;
+import java.util.ArrayList;
+import java.util.List;
+public class Demo {
 
-//public class Demo {
+	public static void main(String[] args) {
+		//List l1 = new List();
+		//List l1 = new ArrayList();
+		//System.out.println(l1);//[]
+		//l1.add(10);
+		//l1.add(20);
+		//l1.add(30);
+	//	l1.add(40);
+		//l1.add(50);
+		//System.out.println(l1);//[10, 20, 30, 40, 50]
+		
+		//List l1 = new ArrayList();
+		//System.out.println(l1);//[]
+		//l1.add(10);
+		//l1.add("Hii");
+		//l1.add('a');
+		//l1.add(4.54);
+		//l1.add(true);
+		//System.out.println(l1);//[10, Hii, a, 4.54, true]
+		
+		
+		//List l1 = new ArrayList();
+		//l1.add(10);
+		//l1.add("Hii");
+		//l1.add(true);
+		//l1.add(4.54);
+		//l1.add(true);
+		//System.out.println(l1);//[10, Hii, 10, 4.54, true]
+		
+		List l1 = new ArrayList();
+		l1.add(10);
+		l1.add("Hii");
+		l1.add(true);
+		l1.add(4.54);
+		l1.add(null);
+		System.out.println(l1);//[10, Hii, true, 4.54, null]
 
-//	 public static void main(String[] args) {
+	}
 
-//	        System.out.println("Hello");//Hello
-
-//	        try {
-//	            int a = 10;
-//	            int b = 0;
-//	            int res = a / b;
-//	            System.out.println(res);
-//	        } catch (ArithmeticException e) {
-//	            System.out.println("Any number cannot be divided by zero");//Any number cannot be divided by zero
-//	        }
-
-//    System.out.println("Bye")//Bye
-
-//	    }
-//	}
-
-//public class Demo {
-//	public static void main(String[] args) {
-
-//        int a = 15;
-//        int b = 25;
-
-//        System.out.println(a + b);//30//40
-//    }
-//}
-class Demo
-{
-    public void m1() throws InterruptedException   // called method
-    {
-        Thread.sleep(5000);
-    }
-
-    // public void m2()   // caller method
-    // {
-    //     try {
-    //         this.m1();
-    //         System.out.println("Thread is working fine now...");
-    //     }
-    //     catch(InterruptedException e)
-    //     {
-    //         System.out.println("Thread got sleep");
-    //     }
-    // }
-    public void m2() throws InterruptedException
-    {
-        this.m1();
-    }
-
-    public void m3() throws InterruptedException   // caller method
-    {
-        this.m2();
-    }
-
-    public static void main(String[] args) throws InterruptedException
-    {
-        Demo d = new Demo();
-        d.m3();
-    }
 }
