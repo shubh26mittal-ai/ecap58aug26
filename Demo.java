@@ -1,63 +1,46 @@
-package collections.mapcollections;
-import java.util.HashMap;
-import java.util.Map;
+//package comparson;
+//import java.util.ArrayList;
+//import java.util.Collections;
+//import java.util.*;
+//public class Demo {
+
+//	public static void main(String[] args) {
+//		    Employee e1 = new Employee(103, "Shubh");
+//	        Employee e2 = new Employee(101, "Shubh");
+//	        Employee e3 = new Employee(102, "Shubh");
+//	        ArrayList<Employee> list = new ArrayList<Employee>();
+//	        list.add(e1);
+//	        list.add(e2);
+//	        list.add(e3);
+//	        System.out.println(list); //[103 Shubh, 101 Shubh, 102 Shubh]     
+//	        Collections.sort(list);        
+//	        System.out.println(list); //[101 Shubh, 102 Shubh, 103 Shubh]
+
+//	}
+
+//}
+		
+//example for comparator
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.*;
 public class Demo {
+	public static void main(String[]args)
+	{
+		Employee e1 = new Employee(103,"Shubh");
+        Employee e2 = new Employee(101, "Shubh");
+        Employee e3 = new Employee(102, "Shubh");
+        Employee e4 = new Employee(104, "Shubh");
 
-	public static void main(String[] args) {
-	//	Map m = new HashMap();
-		//System.out.println(m);//{}
-		//m.put(1, 10);
-		//m.put(2, "Hello");
-		//m.put(3, true);
-		//m.put(4, 5.34);
-		//m.put(5, 'a');
-		//System.out.println(m);//{1=10, 2=Hello, 3=true, 4=5.34, 5=a}
-		
-//		Map m = new HashMap();
-//		System.out.println(m);//{}
-//		m.put(1, 10);
-//		m.put("bye", "Hello");
-//		m.put(false, true);
-//		m.put('g', 5.34);
-//		m.put(5.43, 'a');
-//		System.out.println(m);//{1=10, false=true, g=5.34, 5.43=a, bye=Hello}
-		
-//		Map m = new HashMap();
-//		System.out.println(m);//{}
-//		m.put(1, 10);
-//		m.put(2, "Hello");
-//		m.put(3, true);
-//		m.put(4, 10);
-//		m.put(5, 'a');
-//		m.put(6, true);
-		//System.out.println(m);//{1=10, 2=Hello, 3=true, 4=10, 5=a, 6=true}
-//		System.out.println(m.size());//6
-//		System.out.println(m.get(5));//a
-//		System.out.println(m.containsKey(6));//true
-//		System.out.println(m.containsKey(9));//false
-//		System.out.println(m.containsValue("hello"));//true
-//		System.out.println(m.containsValue("bye"));//false
-		
-		Map m = new HashMap();
-		System.out.println(m);//{}
-		m.put(1, 10);
-		m.put(2, "Hello");
-		m.put(3, true);
-		m.put(4, 10);
-		m.put(5, 'a');
-		m.put(6, true);
-		
-		Set s = m.keySet();
-		System.out.println(s);//[1, 2, 3, 4, 5, 6]
-		
-		Collection c = m.values();
-		System.out.println(c);//[10, Hello, true, 10, a, true]
-		
-		Set entry = m.entrySet();
-        System.out.println(entry);//[1=10, 2=Hello, 3=true, 4=10, 5=a, 6=true]
+        ArrayList<Employee> list = new ArrayList<Employee>();
+        list.add(e1);
+        list.add(e2);
+        list.add(e3);
+        list.add(e4);
 
+        Collections.sort(list, new ComparatorLogicClass());
 
+        System.out.println(list);
+        System.out.println(list);
 	}
-
 }
